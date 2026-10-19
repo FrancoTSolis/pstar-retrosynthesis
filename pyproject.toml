@@ -65,7 +65,7 @@ pstar-export-ursa = "pstar.ursa_export:main"
 packages = ["src/pstar"]
 
 [tool.hatch.build.targets.wheel.force-include]
-"src/pstar/data/value_map.json" = "pstar/data/value_map.json"
+"src/pstar/value_map.json" = "pstar/value_map.json"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

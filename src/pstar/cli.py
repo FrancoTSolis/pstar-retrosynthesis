@@ -16,7 +16,7 @@ from .predictions import JsonPredictionSource
 from .stock import Stock
 from .validate import validate_route
 
-DEFAULT_VALUE_MAP = Path(__file__).parent / "data" / "value_map.json"
+DEFAULT_VALUE_MAP = Path(__file__).parent / "value_map.json"
 
 
 def _resources(arguments):
