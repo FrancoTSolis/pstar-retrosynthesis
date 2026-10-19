@@ -1,0 +1,8 @@
+id,smiles
+benzene,c1ccccc1
+acetyl_chloride,CC(=O)Cl
+styrene,C=Cc1ccccc1
+benzoic_acid,O=C(O)c1ccccc1
+ethanol,CCO
+methanol,CO
+benzoyl_chloride,O=C(Cl)c1ccccc1

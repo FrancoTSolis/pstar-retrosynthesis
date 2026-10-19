@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# Large third-party assets and generated runs
+assets/
+data/
+runs/
+*.pt
+*.ckpt
+*.sqlite
+*.parquet
+*.pkl
+*.json.gz

@@ -1,0 +1,11 @@
+benchmark,method,N50,N100,N200,N300,N400,N500,source
+USPTO-190,RetroStar0,42.6,49.5,55.8,60.0,,62.1,this_work
+USPTO-190,RetroAgent,58.7,70.3,78.2,82.1,83.7,85.2,reproduced_10_run_mean
+USPTO-190,Cstar,64.7,73.2,82.6,85.3,,86.8,this_work
+USPTO-190,Mstar,64.2,75.8,83.7,86.3,,87.9,this_work
+ChEMBL-1000,RetroStar0_reported,64.6,67.2,70.3,71.8,72.7,73.4,RetroAgent_paper
+ChEMBL-1000,RetroStar0,65.3,68.3,71.3,,,74.9,this_work
+ChEMBL-1000,PDVN,73.9,76.4,78.1,79.6,80.3,80.6,reported
+ChEMBL-1000,RetroR1,73.9,78.0,80.4,81.4,82.0,82.4,reported
+ChEMBL-1000,RetroAgent,76.4,79.6,82.0,83.2,83.9,84.4,reported
+ChEMBL-1000,Cstar,79.4,82.9,85.5,,,88.0,this_work

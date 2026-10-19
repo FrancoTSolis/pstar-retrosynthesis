@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pstar-retrosynthesis"
+version = "0.1.0"
+description = "Portfolio search with precedent-based selection for multi-step retrosynthesis"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Fang Sun" },
+  { name = "Wenhao Gao" },
+  { name = "Yizhou Sun" },
+]
+keywords = [
+  "retrosynthesis",
+  "computer-aided synthesis planning",
+  "AND-OR search",
+  "reaction templates",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "rdkit>=2023.9",
+]
+
+[project.optional-dependencies]
+desp = [
+  "torch>=2.1",
+  "rdchiral>=1.1.0",
+]
+ursa = [
+  "retrocast>=0.7",
+]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.7",
+]
+
+[project.urls]
+Repository = "https://github.com/FrancoTSolis/pstar-retrosynthesis"
+
+[project.scripts]
+pstar-search = "pstar.cli:search_main"
+pstar-portfolio = "pstar.cli:portfolio_main"
+pstar-validate = "pstar.cli:validate_main"
+pstar-analyze = "pstar.cli:analyze_main"
+pstar-predict-desp = "pstar.desp:main"
+pstar-export-ursa = "pstar.ursa_export:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pstar"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/pstar/data/value_map.json" = "pstar/data/value_map.json"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 96
+target-version = "py310"

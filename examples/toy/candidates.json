@@ -1,0 +1,50 @@
+{
+  "CC(=O)c1ccccc1": [
+    {
+      "reactants": ["CC(=O)Cl", "c1ccccc1"],
+      "score": 0.45,
+      "template": "toy_friedel_crafts"
+    },
+    {
+      "reactants": ["CC(O)c1ccccc1"],
+      "score": 0.35,
+      "template": "toy_oxidation"
+    },
+    {
+      "reactants": ["C=Cc1ccccc1"],
+      "score": 0.20,
+      "template": "toy_alkene_oxidation"
+    }
+  ],
+  "CC(O)c1ccccc1": [
+    {
+      "reactants": ["C=Cc1ccccc1"],
+      "score": 1.0,
+      "template": "toy_hydration"
+    }
+  ],
+  "CCOC(=O)c1ccccc1": [
+    {
+      "reactants": ["CCO", "O=C(O)c1ccccc1"],
+      "score": 0.60,
+      "template": "toy_esterification"
+    },
+    {
+      "reactants": ["CCO", "O=C(Cl)c1ccccc1"],
+      "score": 0.30,
+      "template": "toy_acylation"
+    },
+    {
+      "reactants": ["COC(=O)c1ccccc1"],
+      "score": 0.10,
+      "template": "toy_transesterification"
+    }
+  ],
+  "COC(=O)c1ccccc1": [
+    {
+      "reactants": ["CO", "O=C(O)c1ccccc1"],
+      "score": 1.0,
+      "template": "toy_esterification"
+    }
+  ]
+}

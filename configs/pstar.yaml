@@ -1,0 +1,46 @@
+budget: 500
+max_depth: 30
+max_routes: 10
+value_map: models/value_map.json
+
+policies:
+  - tag: P01_prior_L16
+    reaction_score: prior
+    leaf_value: learned
+    alpha: 16
+  - tag: P02_prior_const2
+    reaction_score: prior
+    leaf_value: constant2
+  - tag: P03_bb0_L64
+    reaction_score: bb_no_reward
+    leaf_value: learned
+    alpha: 64
+  - tag: P04_bb0_L8
+    reaction_score: bb_no_reward
+    leaf_value: learned
+    alpha: 8
+  - tag: P05_prior_d4
+    reaction_score: prior
+    leaf_value: desp
+  - tag: P06_bb_L8
+    reaction_score: bb
+    leaf_value: learned
+    alpha: 8
+  - tag: P07_bbg002_L16
+    reaction_score: prior_gated_bb
+    leaf_value: learned
+    alpha: 16
+    threshold: 0.02
+  - tag: P08_Cstar
+    reaction_score: bb
+    leaf_value: learned
+    alpha: 16
+  - tag: P09_Mstar
+    reaction_score: bb
+    leaf_value: learned
+    alpha: 8
+    view: matched
+    seed: 0
+  - tag: P10_prior_scs1
+    reaction_score: prior
+    leaf_value: scscore

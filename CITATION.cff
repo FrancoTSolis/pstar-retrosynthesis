@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "P* Retrosynthesis"
+message: "If you use this software, please cite the associated manuscript."
+type: software
+version: 0.1.0
+date-released: 2026-10-19
+license: MIT
+authors:
+  - family-names: Sun
+    given-names: Fang
+  - family-names: Gao
+    given-names: Wenhao
+  - family-names: Sun
+    given-names: Yizhou
+repository-code: "https://github.com/FrancoTSolis/pstar-retrosynthesis"
+preferred-citation:
+  type: article
+  title: "Portfolio Search with Precedent-Based Selection for Multi-Step Retrosynthesis"
+  authors:
+    - family-names: Sun
+      given-names: Fang
+    - family-names: Gao
+      given-names: Wenhao
+    - family-names: Sun
+      given-names: Yizhou
+  year: 2026

@@ -1,0 +1,10 @@
+budget: 500
+max_depth: 30
+max_routes: 1
+value_map: models/value_map.json
+
+policies:
+  - tag: P08_Cstar
+    reaction_score: bb
+    leaf_value: learned
+    alpha: 16
