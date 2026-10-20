@@ -11,7 +11,6 @@ license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [
   { name = "Fang Sun" },
-  { name = "Wenhao Gao" },
   { name = "Yizhou Sun" },
 ]
 keywords = [
